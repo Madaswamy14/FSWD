@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px gainsboro;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__s1 {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar__s1 img {
+    width: 100px;
+}
+
+.navbar__s1 p:hover {
+    color: #A435F0;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.navbar__s1 img:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 30px;
+    width: 55%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 1000px;
+}
+
+.navbar__s2 input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s2:focus-within {
+    border-color: #A435F0; 
+    box-shadow: 0 0 4px rgba(164, 53, 240, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+
+.navbar__s3 {
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar__s3 p:hover {
+    color: #A435F0;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.navbar__s3 i:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: solid 1px gainsboro;
+    justify-content: center;
+}
+
+.categories button {
+    background-color: #A435F0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.categories button:hover {
+    background-color: #7d26ba;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.sale-image img {
+    width: 100%;
+}
+
+.recommended {
+    padding: 10px;
+    
+}
+
+.recommended__container {
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+
+    flex: 0 1 calc(25% - 12px);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 20px;
+}
+
+.course-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d1d7dc;
+}
+
+.topics {
+    padding: 10px;
+
+}
+
+.topics__container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics__container p {
+    padding: 10px;
+    border: solid 2px gray;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.topics__container p:hover {
+    border-color: #A435F0;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+.popular {
+    padding: 10px;
+    margin: 10px;
+}
+
+.popular__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #202230;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.footer__two {
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: solid 1px gray;
+}
+
+.footer__one h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer__one ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__one__s4 li,
+.footer__one__s4 h3,
+.footer__one__s3 li,
+.footer__one__s3 h3,
+.footer__one__s2 li,
+.footer__one__s2 h3,
+.footer__one__s1 li,
+.footer__one__s1 h3 {
+    padding: 5px;
+    display: flex;
+    list-style: none;
+}
+
+.footer__two__s1,
+.footer__two__s2,
+.footer__two__s3 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__two__s1 img {
+    width: 100px;
+}
+
+.footer__one li {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer__one__s4 li:hover,
+.footer__one__s3 li:hover,
+.footer__one__s2 li:hover,
+.footer__one__s1 li:hover,
+.footer__two__s2 p:hover,
+.footer__two__s3 p:hover,
+.footer__two__s1 img:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer__two__s1 img:hover {
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar, .categories {
+        flex-wrap: wrap;
+    }
+    .navbar__s2, .navbar__s3 {
+        width: 100%;
+    }
+    .course-card {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
