@@ -17,6 +17,10 @@ body {
     border-bottom: solid 1px gainsboro;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1 {
@@ -54,6 +58,7 @@ body {
     align-items: center;
     flex-grow: 1;
     max-width: 1000px;
+    
 }
 
 .navbar__s2 input {
@@ -61,6 +66,7 @@ body {
     border: none;
     font-size: 16px;
     padding: 5px;
+    background: transparent;
 }
 
 .navbar__s2 input:focus {
@@ -94,6 +100,34 @@ body {
     transition: 0.3s;
 }
 
+.my-learning {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.my-learning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid 1px black;
+    width: 150px;
+    top: 100%;
+    padding: 20px;
+    right: 0;
+    display: none;
+    z-index: 100;
+    color: black;
+    
+}
+
+.my-learning:hover .my-learning__popup {
+    display: block;
+    
+}
+.my-learning:hover {
+    color: #A435F0;
+}
+
 .categories {
     display: flex;
     gap: 10px;
@@ -124,6 +158,22 @@ body {
 
 .sale-image img {
     width: 100%;
+   position: relative;
+}
+
+.sale-image__offer {
+    width: 20%;
+    background-color: #7d26ba;
+    border-radius: 20px;
+    border: solid 1px #d1d7dc;
+    padding: 20px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    
 }
 
 .recommended {
