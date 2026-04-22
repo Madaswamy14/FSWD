@@ -339,6 +339,11 @@ body {
     cursor: pointer;
 }
 
+.footer__one a {
+    color: white;
+    text-decoration: none;
+}
+
 .footer__one__s4 li:hover,
 .footer__one__s3 li:hover,
 .footer__one__s2 li:hover,
