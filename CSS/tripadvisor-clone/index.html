@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav__container">
+            <div class="navbar__container__menu"><i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i></div>
+            <div class="nav__container__s1">
+                <img src="https://static.tacdn.com/img2/brand_refresh_2025/logos/wordmark.svg" alt="Tripadvisor">
+            </div>
+            <div class="navbar__container__search">
+                <div class="navbar__search__input">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="input-all" placeholder="Search">
+                </div>
+            </div>
+            <div class="navbar__container__s2">
+                <ul>
+                    <li class="navbar__container__s2__plan"><svg viewBox="0 0 20 18" width="20px" height="20px"
+                            class="d Vb hzzSG UmNoP" aria-hidden="true">
+                            <path
+                                d="M10 0.25C11.011 0.25 11.9909 0.390276 12.915 0.650391C12.4823 1.0997 12.0083 1.50843 11.498 1.87012C11.0136 1.79247 10.5132 1.75 10 1.75C5.35816 1.75 1.75 5.07654 1.75 9C1.75 10.4074 2.20681 11.7253 3.00586 12.8447C3.15052 13.0477 3.18502 13.3095 3.09766 13.543L2.17578 15.999L5.59766 15.3154L5.71777 15.3018C5.8381 15.2974 5.95865 15.3216 6.06836 15.374C7.23433 15.9311 8.57261 16.25 10 16.25C14.6418 16.25 18.25 12.9235 18.25 9C18.25 8.28544 18.1291 7.59109 17.9053 6.93262C18.2621 6.51978 18.6528 6.13732 19.0723 5.78809C19.507 6.77815 19.75 7.85938 19.75 9C19.75 13.9131 15.2993 17.75 10 17.75C8.44071 17.75 6.96319 17.4212 5.65137 16.834L1.14746 17.7354C0.880561 17.7887 0.605132 17.6936 0.428711 17.4863C0.2523 17.2789 0.202235 16.9913 0.297852 16.7363L1.55664 13.3779C0.728977 12.0942 0.25 10.599 0.25 9C0.25 4.0869 4.70071 0.25 10 0.25Z">
+                            </path>
+                            <path
+                                d="M15.8313 0C16.1169 1.65015 17.6829 2.9552 19.663 3.1932C17.6829 3.43119 16.117 4.73615 15.8313 6.38624C15.5458 4.73619 13.98 3.4312 12 3.19312C13.98 2.95503 15.5458 1.65008 15.8313 0Z">
+                            </path>
+                            <path
+                                d="M9.99982 4C10.3725 6.58392 12.416 8.62745 15 9.00012C12.4161 9.37278 10.3725 11.4162 9.99982 14C9.62716 11.4162 7.58379 9.3728 5 9C7.58383 8.62719 9.6272 6.5838 9.99982 4Z">
+                            </path>
+                        </svg> Plan with AI</li>
+                    <li>Discover</li>
+                    <li>Review</li>
+                    <li>More</li>
+                    <li class="navbar__container__s2__country"><svg viewBox="0 0 24 24" width="20px" height="20px"
+                            class="d Vb UmNoP" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.31 9.82h4.178c-.069-1.591-.356-2.993-.766-4.017-.237-.593-.501-1.023-.756-1.293-.211-.223-.38-.3-.5-.32h-.133c-.12.02-.289.097-.5.32-.255.27-.519.7-.756 1.293-.41 1.024-.697 2.426-.767 4.017m-.374-5.14q-.135.272-.252.566C8.194 6.472 7.88 8.07 7.81 9.82H5.055a6.39 6.39 0 0 1 3.88-5.14m2.301-1.989a7.883 7.883 0 0 0-7.726 7.88 7.88 7.88 0 0 0 7.884 7.885c.584 0 .871-.014 1.11-.074.124-.031.172-.049.213-.064.058-.02.099-.036.312-.073l-.26-1.477a4 4 0 0 0-.628.159c-.031.007-.132.029-.743.029-.121 0-.313-.06-.566-.327-.255-.27-.519-.699-.756-1.292-.41-1.025-.697-2.426-.767-4.017h4.203a4.7 4.7 0 0 1-.113.843 6 6 0 0 1-.112.413l-.012.04-.004.016c-.034.114-.089.298-.1.478l1.498.088v.006s.007-.035.044-.161l.012-.04c.038-.126.09-.298.136-.505.072-.313.134-.698.152-1.178h2.734a4.2 4.2 0 0 1-.195.949c-.055.16-.11.28-.166.403l-.004.01-.01.02c-.046.101-.132.288-.161.486l1.484.219-.005.026s.012-.032.057-.13l.008-.018c.056-.123.137-.3.216-.529.168-.49.31-1.168.31-2.186a7.88 7.88 0 0 0-7.72-7.879 2 2 0 0 0-.325 0m2.626 1.99q.134.271.252.565c.49 1.226.805 2.824.875 4.574h2.75a6.38 6.38 0 0 0-3.877-5.14M8.94 16.466a8 8 0 0 1-.256-.573c-.49-1.227-.805-2.824-.875-4.574H5.055a6.39 6.39 0 0 0 3.885 5.147">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.489 12.343h-8.75v6.648h5.255l3.495 2.325zm-1.5 1.5v4.674l-1.542-1.026H13.24v-3.648z">
+                            </path>
+                        </svg> | INR</li>
+                    <li class="navbar__container__s2__sign">Sign in</li>
+                </ul>
+            </div>
+            <div class="navbar__container__user"><i class="fa-regular fa-circle-user" style="color: rgb(20, 60, 36);"></i></div>
+        </div>
+    </nav>
+    <div class="search">
+
+
+
+        <div class="search__container">
+            <h1>Where to?</h1>
+            <input type="radio" name="cat" id="all" checked>
+            <input type="radio" name="cat" id="hotels">
+            <input type="radio" name="cat" id="things">
+            <input type="radio" name="cat" id="restaurants">
+
+            <div class="search__categories">
+                <label for="all" class="search__categories__label"><svg viewBox="0 0 24 24" width="24px" height="24px"
+                        class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.889 3.542a.25.25 0 0 0-.278 0l-8 5.333a.25.25 0 0 0-.111.208v10.465c0 .138.112.25.25.25h16a.25.25 0 0 0 .25-.25V9.083a.25.25 0 0 0-.111-.208zm-1.11-1.248a1.75 1.75 0 0 1 1.942 0l8 5.333c.487.325.779.871.779 1.456v10.465a1.75 1.75 0 0 1-1.75 1.75h-16A1.75 1.75 0 0 1 2 19.548V9.083c0-.585.292-1.131.78-1.456z">
+                        </path>
+                    </svg><span>Search
+                        All</span></label>
+                <label for="hotels" class="search__categories__label"><svg viewBox="0 0 24 24" width="24px"
+                        height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 12.5V20h-4.5v-3h-11v3H2V6.25a2.25 2.25 0 0 1 4.5 0v6.25zM5 6.25a.75.75 0 0 0-1.5 0V18.5H5v-3h14v3h1.5V14H5z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 10.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11 7h5.6a5.4 5.4 0 0 1 5.4 5.4V14H11zm9.241 4A3.9 3.9 0 0 0 16.6 8.5h-4.1v4h8v-.1a3.9 3.9 0 0 0-.259-1.4">
+                        </path>
+                    </svg><span>Hotels</span></label>
+                <label for="things" class="search__categories__label"><svg viewBox="0 0 24 24" width="24px"
+                        height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.56 7.5H3.75a.25.25 0 0 0-.25.25v10c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25v-10a.25.25 0 0 0-.25-.25h-3.81l-2-2H9.56zM8.94 4h6.12l2 2h3.19c.966 0 1.75.784 1.75 1.75v10a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 17.75v-10C2 6.784 2.784 6 3.75 6h3.19z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 9.25a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5M7.75 12a4.25 4.25 0 1 1 8.5 0 4.25 4.25 0 0 1-8.5 0">
+                        </path>
+                    </svg><span>Things to
+                        Do</span></label>
+                <label for="restaurants" class="search__categories__label"><svg viewBox="0 0 24 24" width="24px"
+                        height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.051 6.549v.003l1.134 1.14 3.241-3.25.003-.002 1.134 1.136-3.243 3.252 1.134 1.14a1 1 0 0 0 .09-.008c.293-.05.573-.324.72-.474l.005-.006 2.596-2.603L22 8.016l-2.597 2.604a3.73 3.73 0 0 1-1.982 1.015 4.3 4.3 0 0 1-3.162-.657l-.023-.016-.026-.018-1.366 1.407 8.509 8.512L20.219 22l-.002-.002-6.654-6.663-2.597 2.76-7.3-7.315C1.967 8.948 1.531 6.274 2.524 4.198c.241-.504.566-.973.978-1.386l8.154 8.416 1.418-1.423-.039-.045c-.858-1.002-1.048-2.368-.62-3.595a4.15 4.15 0 0 1 .983-1.561L16 2l1.135 1.138-2.598 2.602-.047.045c-.16.151-.394.374-.433.678zM3.809 5.523c-.362 1.319-.037 2.905 1.06 4.103L10.93 15.7l1.408-1.496zM2.205 20.697 3.34 21.84l4.543-4.552-1.135-1.143z">
+                        </path>
+                    </svg></i><span>Restaurants</span></label>
+            </div>
+
+            <div class="search__bar">
+                <div class="search__bar__input">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="input-all" placeholder="Places to go, things to do, hotels...">
+                    <input type="text" class="input-hotels" placeholder="Hotel name or destination...">
+                    <input type="text" class="input-things" placeholder="Attractions, activities, tours...">
+                    <input type="text" class="input-restaurants" placeholder="Establishment or cuisine...">
+                </div>
+                <button class="search__bar__submit">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__left">
+            <div class="banner__left__slider">
+                <img src="./images/banner-image1.jpg" alt="Slide 1">
+                <img src="./images/banner-image2.jpg" alt="Slide 2">
+                <img src="./images/banner-image3.jpg" alt="Slide 3">
+                <img src="./images/banner-image4.jpg" alt="Slide 4">
+            </div>
+        </div>
+        <div class="banner__right">
+            <input type="checkbox" id="animation-toggle" class="circle-pause-checkbox">
+
+            <h1>Find things to do for everything you're into</h1>
+            <p>Browse 400,000+ experiences and book with us.</p>
+            <button class="banner__book">Book now</button>
+
+            <label for="animation-toggle" class="banner__toggle__btn">
+
+
+                <i class="fa-regular fa-circle-play play-icon"></i>
+                <i class="fa-regular fa-circle-pause pause-icon"></i>
+            </label>
+        </div>
+    </div>
+    <div class="interest">
+        <h3>Find things to do by interest</h3>
+        <p>Whatever you're into, we’ve got it</p>
+        <div class="interest__container">
+            <div class="interest__card"><img src="./images/interest1.jpg" alt="Interest 1">
+                <h3>Outdoors</h3>
+            </div>
+            <div class="interest__card"><img src="./images/interest2.jpg" alt="Interest 2">
+                <h3>Food</h3>
+            </div>
+            <div class="interest__card"><img src="./images/interest3.jpg" alt="Interest 3">
+                <h3>Culture</h3>
+            </div>
+            <div class="interest__card"><img src="./images/interest4.jpg" alt="Interest 4">
+                <h3>Water</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore">
+        <h3>Explore experiences near Chennai (Madras)</h3>
+        <p>Can’t-miss picks near you</p>
+        <div class="explore__container">
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore1.jpg" alt="Mahabalipuram tour">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Mahabalipuram tour by Tourism Ministry approved company</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(408)</span>
+                    </div>
+                    <h5>from ₹11,098 per adult</h5>
+                </div>
+            </div>
+
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore2.jpg" alt="Explore 2">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Chennai Market Tour & Cooking Class in a Local Home with Meena</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(35)</span>
+                    </div>
+                    <h5>from ₹5,189 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore3.jpg" alt="Explore 3">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Chennai tour in car with guide-winner of traveller's choice award</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(266)</span>
+                    </div>
+                    <h5>from ₹7,688 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore4.jpg" alt="Explore 4">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Chennai, Guided Birding And Birding Photo Trip With Spot Scope, 2 to 3 Hours</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(16)</span>
+                    </div>
+                    <h5>from ₹6,000 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore5.jpg" alt="Explore 5">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Pondicherry day trip from Chennai by Wonder tours</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(46)</span>
+                    </div>
+                    <h5>from ₹16,240 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore6.jpg" alt="Explore 6">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Birds & Beyond: Chennai to Pulicat Bird Sanctuary Day Tour</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(1)</span>
+                    </div>
+                    <h5>from ₹13,261 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore7.jpg" alt="Explore 7">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Chennai to Taj Mahal and Agra Same Day Tour with Return Flights</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(4)</span>
+                    </div>
+                    <h5>from ₹4,805 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore8.jpg" alt="Explore 8">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Gods of Mylapore walking tour: Journey Through Living Traditions</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(272)</span>
+                    </div>
+                    <h5>from ₹3,844 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore9.jpg" alt="Explore 9">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>British Architecture Walk, an immersive walking tour in Chennai</h3>
+                    <div class="rating__row">
+                        <span>4.8</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(62)</span>
+                    </div>
+                    <h5>from ₹5,285 per adult</h5>
+                </div>
+            </div>
+            <div class="explore__card">
+                <div class="explore__card__image">
+                    <img src="./images/explore10.jpg" alt="Explore 10">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="explore__card__content">
+                    <h3>Auroville and Pondicherry Tour from Chennai</h3>
+                    <div class="rating__row">
+                        <span>5.0</span>
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(5)</span>
+                    </div>
+                    <h5>from ₹12,877 per adult</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="donate">
+        <div class="donate__container">
+            <div class="donate__left"><img src="./images/donation.jpg" alt="Donation Image"></div>
+            <div class="donate__right">
+                <div class="donate__right__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M 12 6 C 10.097656 6 8.324219 6.367188 6.8125 7 L 2 7 C 2 7 3.140625 8.394531 3.277344 9.691406 C 2.492188 10.574219 2 11.726563 2 13 C 2 15.761719 4.238281 18 7 18 C 8.378906 18 9.628906 17.441406 10.535156 16.535156 L 12 18 L 13.464844 16.535156 C 14.371094 17.441406 15.621094 18 17 18 C 19.761719 18 22 15.761719 22 13 C 22 11.726563 21.507813 10.574219 20.722656 9.691406 C 20.859375 8.394531 22 7 22 7 L 17.175781 7 C 15.667969 6.367188 13.898438 6 12 6 Z M 12 8 C 13.054688 8 14.078125 8.152344 15.03125 8.40625 C 13.25 9.171875 12 10.9375 12 13 C 12 10.929688 10.742188 9.15625 8.949219 8.394531 C 9.910156 8.140625 10.941406 8 12 8 Z M 7 10 C 8.65625 10 10 11.34375 10 13 C 10 14.65625 8.65625 16 7 16 C 5.34375 16 4 14.65625 4 13 C 4 11.34375 5.34375 10 7 10 Z M 17 10 C 18.65625 10 20 11.34375 20 13 C 20 14.65625 18.65625 16 17 16 C 15.34375 16 14 14.65625 14 13 C 14 11.34375 15.34375 10 17 10 Z M 7 12 C 6.449219 12 6 12.449219 6 13 C 6 13.550781 6.449219 14 7 14 C 7.550781 14 8 13.550781 8 13 C 8 12.449219 7.550781 12 7 12 Z M 17 12 C 16.449219 12 16 12.449219 16 13 C 16 13.550781 16.449219 14 17 14 C 17.550781 14 18 13.550781 18 13 C 18 12.449219 17.550781 12 17 12 Z">
+                        </path>
+                    </svg>
+                    <p>Tripadvisor Foundation</p>
+                </div>
+                <h1>Show some love to small businesses</h1>
+                <p>Donate to Kiva.org today to provide loans to local entrepreneurs and the Tripadvisor Foundation
+                    will match it, up to $150,000 USD collectively. Terms apply.</p><button>Donate now</button>
+            </div>
+        </div>
+    </div>
+    <div class="adventures">
+        <h3>Adventures of a lifetime</h3>
+        <div class="adventures__container">
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures1.jpg" alt="Adventures 1">
+                    
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <span class="badge__sellout">Likely To Sell Out</span>
+                    <h3>4-Day Short Salkantay Trek to Machu Picchu with Sky Camp Stay</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(3,669)</span>
+                    </div>
+                    <h5>from ₹66,787 per adult</h5>
+                </div>
+            </div>
+
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures2.jpg" alt="Adventures 2">
+
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Balloon Safari & Bush Breakfast in Serengeti - Miracle Experience</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(2,256)</span>
+                    </div>
+                    <h5>from 57,562 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures3.jpg" alt="Adventures 3">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <span class="badge__sellout">Likely To Sell Out</span>
+                    <h3>Rotorua Canopy Tours: 2.5Hour Native Forest Zipline Adventure</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(4,443)</span>
+                    </div>
+                    <h5>from 11,326 per adult</h5>
+                </div>
+
+                
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures4.jpg" alt="Adventures 4">
+                    
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <span class="badge__bestsel">Best Seller</span>
+                    <h3>Teotihuacan Hot Air Balloon Flight from Mexico City / Volare</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(1,555)</span>
+                    </div>
+                    <h5>from 14,550 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures5.jpg" alt="Adventures 5">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Arctic Day: Aurora Viewing Tour | late night</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(49)</span>
+                    </div>
+                    <h5>from 12,513 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures6.jpg" alt="Adventures 6">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Helicopter Scenic Flight Over Victoria Falls - 13 Minute Flight</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(65)</span>
+                    </div>
+                    <h5>from 16,625 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures7.jpg" alt="Adventures 7">
+                    
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <span class="badge__sellout">Likely To Sell Out</span>
+                    <h3>Airlie Beach Glass Bottom Boat Tour</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(177)</span>
+                    </div>
+                    <h5>from 6,812 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures8.jpg" alt="Adventures 8">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Dubai Red Dunes Desert Safari with BBQ Dinner, Camel Ride & Sandboarding</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(22,584)</span>
+                    </div>
+                    <h5>from 9,610 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures9.jpg" alt="Adventures 9">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Abu Dhabi: Desert Safari with BBQ, Camel Ride & Sandboarding</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(2,968)</span>
+                    </div>
+                    <h5>from 11,285 per adult</h5>
+                </div>
+            </div>
+            <div class="adventures__container__card">
+                <div class="adventures__card__image">
+                    <img src="./images/adventures10.jpg" alt="Adventures 10">
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="adventures__card__content">
+                    <h3>Dubai Red Dunes ATV, Camels, Stargazing & 5* BBQ Al Khayma Camp</h3>
+                    <div class="rating__row">
+                        <div class="circles">●●●●●</div>
+                        <span class="reviews">(22,584)</span>
+                    </div>
+                    <h5>from 8,877 per adult</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="iconic">
+        <h3>Find things to do by interest</h3>
+        <p>Whatever you're into, we’ve got it</p>
+        <div class="iconic__container">
+            <div class="iconic__card"><img src="./images/iconic1.jpg" alt="iconic 1">
+                <h3>Rome, Italy</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic2.jpg" alt="iconic 2">
+                <h3>Paris, France</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic3.jpg" alt="iconic 3">
+                <h3>Las Vegas, USA</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic4.jpg" alt="iconic 4">
+                <h3>London, UK</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic1.jpg" alt="iconic 1">
+                <h3>Florence, Italy</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic2.jpg" alt="iconic 2">
+                <h3>New York, USA</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic3.jpg" alt="iconic 3">
+                <h3>Barcelona, Spain</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic4.jpg" alt="iconic 4">
+                <h3>Oahu, Hawaii</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic3.jpg" alt="iconic 3">
+                <h3>Amsterdam, Netherlands</h3>
+            </div>
+            <div class="iconic__card"><img src="./images/iconic4.jpg" alt="iconic 4">
+                <h3>Reykjavik, Iceland</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer__one">
+
+                <div class="footer__one__s1">
+
+                    <ul>
+                        <h3>About Tripadvisor <i class="fa-solid fa-chevron-down mobile-arrow"></i></h3>
+                        <li><a href="./about-us.html" target="_blank">About Us</a></li>
+                        <li><a href="./press.html" target="_blank">Press</a></li>
+                        <li><a href="./resources-and-policies.html" target="_blank">Resources and Policies</a>
+                        </li>
+                        <li><a href="./careers.html" target="_blank">Careers</a></li>
+                        <li><a href="./trust-and-safety.html" target="_blank">Trust & Safety</a></li>
+                        <li><a href="./contact-us.html" target="_blank">Contact us</a></li>
+                        <li><a href="./technology-blog.html" target="_blank">Tripadvisor Technology Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__one__s2">
+
+                    <ul>
+                        <h3>Explore <i class="fa-solid fa-chevron-down mobile-arrow"></i></h3>
+                        <li><a href="./write-review.html" target="_blank">Write a review</a></li>
+                        <li><a href="./add-place.html" target="_blank">Add a Place</a></li>
+                        <li><a href="./join.html" target="_blank">Join</a></li>
+                        <li><a href="./travellers-choice.html" target="_blank">Travellers' Choice</a></li>
+                        <li><a href="./help-centre.html" target="_blank">Help Centre</a></li>
+                        <li><a href="./travel-stories.html" target="_blank">Travel Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer__one__s3">
+
+                    <ul>
+                        <h3>Do Business With Us <i class="fa-solid fa-chevron-down mobile-arrow"></i></h3>
+                        <li><a href="./owners-dmo.html" target="_blank">Owners & DMO/CVB</a></li>
+                        <li><a href="./business-advantage.html" target="_blank">Business Advantage</a></li>
+                        <li><a href="./sponsored-placements.html" target="_blank">Sponsored Placements</a></li>
+                        <li><a href="./advertise-with-us.html" target="_blank">Advertise with Us</a></li>
+                        <li><a href="./content-api.html" target="_blank">Access our Content API</a></li>
+                    </ul>
+                </div>
+                <div class="footer__one__s4">
+                    <ul>
+                        <h3>Get the app <i class="fa-solid fa-chevron-down mobile-arrow"></i></h3>
+                        <li><a href="./iphone-app.html" target="_blank">iPhone App</a></li>
+                        <li><a href="./android-app.html" target="_blank">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="footer__one__s5">
+                    <ul>
+                        <h3>Tripadvisor Sites <i class="fa-solid fa-chevron-down mobile-arrow"></i></h3>
+                        <li>Book tours and attraction tickets on <a href="./viator.html" target="_blank"
+                                class="a__viator"><u>Viator</u></a></li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__two">
+                <div class="footer__two__left">
+                    <div class="footer__two__s1"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                            height="100" viewBox="0 0 24 24">
+                            <path
+                                d="M 12 6 C 10.097656 6 8.324219 6.367188 6.8125 7 L 2 7 C 2 7 3.140625 8.394531 3.277344 9.691406 C 2.492188 10.574219 2 11.726563 2 13 C 2 15.761719 4.238281 18 7 18 C 8.378906 18 9.628906 17.441406 10.535156 16.535156 L 12 18 L 13.464844 16.535156 C 14.371094 17.441406 15.621094 18 17 18 C 19.761719 18 22 15.761719 22 13 C 22 11.726563 21.507813 10.574219 20.722656 9.691406 C 20.859375 8.394531 22 7 22 7 L 17.175781 7 C 15.667969 6.367188 13.898438 6 12 6 Z M 12 8 C 13.054688 8 14.078125 8.152344 15.03125 8.40625 C 13.25 9.171875 12 10.9375 12 13 C 12 10.929688 10.742188 9.15625 8.949219 8.394531 C 9.910156 8.140625 10.941406 8 12 8 Z M 7 10 C 8.65625 10 10 11.34375 10 13 C 10 14.65625 8.65625 16 7 16 C 5.34375 16 4 14.65625 4 13 C 4 11.34375 5.34375 10 7 10 Z M 17 10 C 18.65625 10 20 11.34375 20 13 C 20 14.65625 18.65625 16 17 16 C 15.34375 16 14 14.65625 14 13 C 14 11.34375 15.34375 10 17 10 Z M 7 12 C 6.449219 12 6 12.449219 6 13 C 6 13.550781 6.449219 14 7 14 C 7.550781 14 8 13.550781 8 13 C 8 12.449219 7.550781 12 7 12 Z M 17 12 C 16.449219 12 16 12.449219 16 13 C 16 13.550781 16.449219 14 17 14 C 17.550781 14 18 13.550781 18 13 C 18 12.449219 17.550781 12 17 12 Z">
+                            </path>
+                        </svg>
+                        <p>&copy; 2026 Tripadvisor LLC All rights reserved.</p>
+                    </div>
+                    <div class="footer__two__s2">
+                        <h3><a href="./terms-of-use.html" target="_blank">Terms of Use</a></h3>
+                        <h3><a href="./privacy-cookies.html" target="_blank">Privacy and Cookies Statement</a></h3>
+                        <h3><a href="./cookie-consent.html" target="_blank">Cookie consent</a></h3>
+                        <h3><a href="./how-site-works.html" target="_blank">How the site works</a></h3>
+                        <h3><a href="./contact-us.html" target="_blank">Contact us</a></h3>
+                        <h3><a href="./accessibility.html" target="_blank">Accessibility Statement</a></h3>
+                    </div>
+                    <div class="footer__two__s3">
+                        <p class="preview-text">This is the version of our website addressed to speakers of English in India. If you are
+                            a
+                            resident
+                            of another country or region, please select the appropriate version of Tripadvisor for
+                            your
+                            country
+                            or region in the drop-down menu...</p>
+
+                        <details class="details__readmore">
+                            <summary>
+                                <span class="readmore-text">Read more <i class="fa-solid fa-chevron-down"></i></span>
+                                <span class="readless-text">Read less <i class="fa-solid fa-chevron-up"></i></span>
+                            </summary>
+                            <p>This is the version of our website addressed to speakers of English in India. If you
+                                are a resident of another country or region, please select the appropriate version
+                                of Tripadvisor for your country or region in the drop-down menu.</p>
+                            <p>Tripadvisor LLC makes no guarantees for availability of prices advertised on our
+                                sites and
+                                applications. Listed prices may require a stay of a particular length or have
+                                blackout
+                                dates,
+                                qualifications or other applicable restrictions. Tripadvisor LLC is not responsible
+                                for any
+                                content on external web sites that are not owned or operated by Tripadvisor.</p>
+                            <p>Tripadvisor LLC is not a booking agent or tour operator. When you book with one of
+                                our
+                                partners,
+                                please be sure to check their site for a full disclosure of all applicable fees.</p>
+                        </details>
+                    </div>
+                </div>
+
+                
+            <div class="footer__two__right">
+                <div class="footer__right__dropdown">
+                    <div class="footer__two__currency">
+                        <select name="currency" id="aside__currency">
+                            <option value="INR">₹ Indian Rupee</option>
+                            <option value="USD">$ US Dollar</option>
+                            <option value="EUR">€ Euro</option>
+                            <option value="GBP">£ British Pound</option>
+                            <option value="JPY">¥ Japanese Yen</option>
+                            <option value="AUD">A$ Australian Dollar</option>
+                            <option value="CAD">C$ Canadian Dollar</option>
+                            <option value="CNY">¥ Chinese Yuan</option>
+                            <option value="BRL">R$ Brazilian Real</option>
+                            <option value="ZAR">R South African Rand</option>
+                        </select></div>
+                    <div class="footer__two__country"><select name="country" id="aside__country">
+                            <option value="IN">India</option>
+                            <option value="US">United States</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="JP">Japan</option>
+                            <option value="AU">Australia</option>
+                            <option value="CA">Canada</option>
+                            <option value="CN">China</option>
+                            <option value="BR">Brazil</option>
+                            <option value="ZA">South Africa</option>
+                        </select></div></div>
+                    <div class="footer__two__social">
+                        <i class="fa-brands fa-facebook" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-brands fa-x-twitter" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-brands fa-pinterest" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-brands fa-instagram" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-brands fa-youtube" style="color: rgb(0, 0, 0);"></i>
+                        <i class="fa-brands fa-tiktok" style="color: rgb(0, 0, 0);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
