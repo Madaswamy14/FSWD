@@ -25,6 +25,9 @@ FSWD/
 
 ### Tripadvisor Clone
 Located in `CSS/tripadvisor-clone/`.
+
+**Live Demo:** [https://madaswamy14.github.io/FSWD/CSS/tripadvisor-clone/index.html](https://madaswamy14.github.io/FSWD/CSS/tripadvisor-clone/index.html)
+
 A pixel-accurate clone of the Tripadvisor homepage built with **pure HTML and CSS** — no JavaScript.
 
 - **Sticky Navbar** with logo, search bar, navigation links, and sign-in button.
@@ -44,10 +47,16 @@ A personal portfolio website showcasing work, skills, and interests.
 
 ### Udemy Clone
 Located in `CSS/udemy-clone/`.
+
+**Live Demo:** [https://madaswamy14.github.io/FSWD/CSS/udemy-clone/index.html](https://madaswamy14.github.io/FSWD/CSS/udemy-clone/index.html)
+
 A clone of the popular online learning platform Udemy's landing page used to practice complex CSS layouts, positioning, and styling.
 
 ### HTML Foundations
 Located in `HTML/`.
+
+**Live Demo:** [https://madaswamy14.github.io/FSWD/HTML/index.html](https://madaswamy14.github.io/FSWD/HTML/index.html)
+
 A collection of standalone files focusing on mastering core HTML tags, forms, tables, and document structures before adding styles.
 
 ## 💻 Technologies Used
